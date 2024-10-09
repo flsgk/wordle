@@ -1,10 +1,9 @@
 main {
-  /* 상위 요소에 gap 을 주면 하위 요소에 적용 */
   display: flex;
-  flex-direction: column;
+  flex-direction: column; /* flex의 배치 기준을 세로로 바꿈 */
   justify-content: center;
   align-items: center;
-  gap: 5px;
+  gap: 5px; /* 상위 요소에 gap 을 주면 하위 요소에 적용 */
 }
 
 .time {
@@ -14,18 +13,13 @@ main {
   font-weight: bold;
 }
 
-.time-typo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-right: 10px;
-}
-
 .board-row {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 5px;
+  font-weight: bold;
+  font-size: larger;
 }
 
 .board-block {
@@ -35,57 +29,4 @@ main {
   border: 2px solid #d3d6da;
   width: 60px;
   height: 60px;
-}
-
-footer {
-  /* 상위 요소에 gap 을 주면 하위 요소에 적용 */
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 5px;
-  margin-top: 20px;
-}
-
-.key-row {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 5px;
-}
-
-.key-block {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: 2px solid #d3d6da;
-  width: 40px;
-  height: 60px;
-  background-color: #d3d6da;
-  font-weight: bolder;
-  border-radius: 5px;
-}
-
-.key-block__back {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: 2px solid #d3d6da;
-  width: 80px;
-  height: 60px;
-  background-color: #d3d6da;
-  font-weight: bolder;
-  border-radius: 5px;
-}
-
-.key-block__enter {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: 2px solid #d3d6da;
-  width: 80px;
-  height: 60px;
-  background-color: #d3d6da;
-  font-weight: bolder;
-  border-radius: 5px;
 }
